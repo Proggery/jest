@@ -13,5 +13,5 @@ test('a szám csak 0 lehet', () => {
 })
 
 test('ékezetes betű lecserélése', () => {
-  expect(ekezetesKarakter("sőr")).toBe({index: 1, newText: "sor"})
+  expect(ekezetesKarakter("sörös")).toEqual({index: 2, newText: "soros"})
 })

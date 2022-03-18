@@ -19,7 +19,6 @@ const ekezetesKarakter = (text) => {
   let newText = "";
   let newTextObj = [];
   let counterArray = [];
-  let szam = 4;
 
   for (let i = 0; i < text.length; i++) {
     textArray.push(text[i]);
@@ -42,8 +41,7 @@ const ekezetesKarakter = (text) => {
       char === "ű"
     ) {
       counter++;
-      szam = counter;
-      counterArray.push(szam);
+      counterArray.push(counter);
     }
 
     newChar = char.replace("á", "a");
@@ -71,12 +69,6 @@ const ekezetesKarakter = (text) => {
   }
 
   return newTextObj[newTextObj.length - 1];
-
-  // return newTextObj;
 };
-
-// ekezetesKarakter("sőr");
-
-// console.log(ekezetesKarakter("sőr"));
 
 module.exports = { osszeadas, kivonas, nulla, ekezetesKarakter };
