@@ -1,5 +1,3 @@
-const match = require("nodemon/lib/monitor/match");
-
 const osszeadas = (a, b) => {
   return a + b;
 };
